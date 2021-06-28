@@ -1,0 +1,65 @@
+body{
+	background-image: url("../images/background.jpg");
+	background-size: 1600px 800px;
+}
+
+.sun{
+	width: 200px;
+	height: 200px;
+	animation: firstanimation 3s infinite alternate ;
+	position: absolute;
+}
+.animation-block{
+	position: relative;
+}
+.deer{
+	margin-top: 550px;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	animation: secondanimation 3s infinite alternate;
+}
+.birds{
+	margin-left: 600px;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	animation: thirdanimation 3s infinite alternate;
+}
+
+.bear{
+	margin:550px auto auto 600px;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	animation: fourthanimation 3s infinite alternate;
+}
+
+
+@keyframes firstanimation{
+	0% {top: 0px;}
+	30% {top: 30px;}
+	50% {top: 60px;}
+	80% {top: 100px;}
+}
+@keyframes secondanimation{
+	0% {left: 0px;}
+	40%{left: 150px;}
+	70%{left: 250px}
+	80%{left: 350px;}
+	100%{left: 450px;}
+}
+@keyframes thirdanimation{
+	0% {right: 0px;}
+	30%{right: 100px;}
+	60%{right: 200px;}
+	90%{right: 300px;}
+	100%{right: 400px;}
+}
+@keyframes fourthanimation{
+	0%{right: 0px;}
+	30%{right: 80px;}
+	55%{right: 160px;}
+	80%{right: 240px;}
+	100%{right: 300px;}
+}
